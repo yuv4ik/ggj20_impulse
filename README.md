@@ -1,1 +1,3 @@
-# ggj20_impulse
+# Global Game Jam 2020
+
+## Impulse
