@@ -8,12 +8,22 @@ public class WallsController : MonoBehaviour
     [SerializeField]
     float _movementSpeed, _playerOffset;
 
+    AudioSource _audioSource;
+
+    private void Awake()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (_leftWall.transform.position.z + _playerOffset < _character.transform.position.z)
         {
             _leftWall.transform.position += new Vector3(0, 0, 1 * _movementSpeed * Time.deltaTime);
+        } else
+        {
+            _audioSource.Stop();
         }
 
         if (_rightWall.transform.position.z - _playerOffset > _character.transform.position.z)
