@@ -3,7 +3,7 @@
 public class WallsController : MonoBehaviour
 {
     [SerializeField]
-    GameObject _leftWall, _rightWall, _topWall, _bottomWall, _character;
+    GameObject _leftWall, _rightWall/*, _topWall*/, _bottomWall, _character;
 
     [SerializeField]
     float _movementSpeed, _playerOffset;
@@ -31,10 +31,10 @@ public class WallsController : MonoBehaviour
             _rightWall.transform.position += new Vector3(0, 0, -1 * _movementSpeed * Time.deltaTime);
         }
 
-        if (_topWall.transform.position.x + _playerOffset < _character.transform.position.x)
-        {
-            _topWall.transform.position += new Vector3(1 * _movementSpeed * Time.deltaTime, 0, 0);
-        }
+        //if (_topWall.transform.position.x + _playerOffset < _character.transform.position.x)
+        //{
+        //    _topWall.transform.position += new Vector3(1 * _movementSpeed * Time.deltaTime, 0, 0);
+        //}
 
         if (_bottomWall.transform.position.x - _playerOffset > _character.transform.position.x)
         {
