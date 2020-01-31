@@ -1,27 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DoorController : MonoBehaviour, IPlayerInteractable
 {
-    // TODO: Play sound
     // TODO: Show open animation
     // TODO: Restart the level
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    AudioSource _audioSource;
+    bool _isOpened;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public void Interact()
     {
-        Debug.Log("-----> YAY door is PlayerInteractable!");
+        if (_isOpened || _audioSource.isPlaying) return;
+
+        _isOpened = true;
+        _audioSource.Play();
     }
 }
