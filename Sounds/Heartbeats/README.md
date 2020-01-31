@@ -1,4 +1,4 @@
-# Hearbeats
+# Heartbeats
 
 ## Source:
 - 0:00:10 • 01 Dramatic heartbeat 🔽 https://youtu.be/krs6zBMfSCg
