@@ -30,6 +30,7 @@ public class SnakeCollectableSpawner : MonoBehaviour, ISpawner
         if (_spawnCounter >= _maxObjectsToSpawn)
         {
             _timerController.Stop();
+            if (ImpulseSceneManager.IsGameOverLoaded()) return;
             ImpulseSceneManager.LoadCongrats();
             return;
         }
