@@ -2,12 +2,10 @@
 
 public class DoorController : MonoBehaviour, IPlayerInteractable
 {
-    // TODO: Show open animation
-    // TODO: Restart the level
-
     AudioSource _audioSource;
     Animator _animator;
-    bool _isOpened;
+
+    public bool Activated { get; private set; }
 
     void Awake()
     {
@@ -17,9 +15,9 @@ public class DoorController : MonoBehaviour, IPlayerInteractable
 
     public void Interact()
     {
-        if (_isOpened || _audioSource.isPlaying) return;
+        if (Activated || _audioSource.isPlaying) return;
 
-        _isOpened = true;
+        Activated = true;
         _audioSource.Play();
         _animator.SetTrigger("open");
     }

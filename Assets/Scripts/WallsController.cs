@@ -10,7 +10,9 @@ public class WallsController : MonoBehaviour
 
     AudioSource _audioSource;
 
-    private void Awake()
+    bool _shouldMove = true;
+
+    void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
     }
@@ -18,6 +20,8 @@ public class WallsController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!_shouldMove) return;
+
         if (_leftWall.transform.position.z + _playerOffset < _character.transform.position.z)
         {
             _leftWall.transform.position += new Vector3(0, 0, 1 * _movementSpeed * Time.deltaTime);
@@ -40,5 +44,11 @@ public class WallsController : MonoBehaviour
         {
             _bottomWall.transform.position += new Vector3(-1 * _movementSpeed * Time.deltaTime, 0, 0);
         }
+    }
+
+    public void StopMoving()
+    {
+        _shouldMove = false;
+        _audioSource.Stop();
     }
 }
