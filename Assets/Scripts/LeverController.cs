@@ -2,9 +2,6 @@
 
 public class LeverController : MonoBehaviour, IPlayerInteractable
 {
-    [SerializeField]
-    WallsController _wallsController;
-
     AudioSource _audioSource;
     WrongDecisionController _wrongDecisionController;
 
@@ -23,7 +20,6 @@ public class LeverController : MonoBehaviour, IPlayerInteractable
 
         _activationTimestamp = Time.time;
         _audioSource.Play();
-        _wallsController.StopMoving();
     }
 
     float _activationTimestamp;

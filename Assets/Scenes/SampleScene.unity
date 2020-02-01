@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   _topWall: {fileID: 1133792912}
   _bottomWall: {fileID: 602957960}
   _character: {fileID: 913292614}
-  _movementSpeed: 0.5
+  _movementSpeed: 1
   _playerOffset: 2.5
 --- !u!82 &1092570966
 AudioSource:
@@ -2432,7 +2432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5421221ae6db34f73a1b71157a889c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallsController: {fileID: 1092570965}
 --- !u!114 &1476069588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2445,6 +2444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef5053b96e2043c8a8d3c6d826566ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wallsController: {fileID: 0}
 --- !u!1 &1480294778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,6 +2762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef5053b96e2043c8a8d3c6d826566ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wallsController: {fileID: 1092570965}
 --- !u!114 &1601621641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2774,7 +2775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5421221ae6db34f73a1b71157a889c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallsController: {fileID: 1092570965}
 --- !u!82 &1601621642
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3331,6 +3331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef5053b96e2043c8a8d3c6d826566ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wallsController: {fileID: 1092570965}
 --- !u!1 &2009135582
 GameObject:
   m_ObjectHideFlags: 0
