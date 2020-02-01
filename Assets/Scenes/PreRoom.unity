@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 8654075327053302857, guid: 5759b9a7f02385d4ca4b33bb907c3f2c,
         type: 3}
       propertyPath: m_Name
-      value: door1
+      value: Door_Claustrophibia
       objectReference: {fileID: 0}
     - target: {fileID: 8654075327053302857, guid: 5759b9a7f02385d4ca4b33bb907c3f2c,
         type: 3}
@@ -542,6 +542,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1716278067}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &570666093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 2024312321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &570666098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570666093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58dcefd8d5afa4480a8974b222cf60eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &876002954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3976728421304335777, guid: 553203b4f885e734fbcb5729e75daed9,
@@ -639,7 +657,12 @@ PrefabInstance:
     - target: {fileID: 8654075327053302857, guid: 5759b9a7f02385d4ca4b33bb907c3f2c,
         type: 3}
       propertyPath: m_Name
-      value: door1 (3)
+      value: Door_Social_Phobia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654075327053302857, guid: 5759b9a7f02385d4ca4b33bb907c3f2c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5759b9a7f02385d4ca4b33bb907c3f2c, type: 3}
@@ -943,7 +966,7 @@ PrefabInstance:
     - target: {fileID: 8654075327053302857, guid: 5759b9a7f02385d4ca4b33bb907c3f2c,
         type: 3}
       propertyPath: m_Name
-      value: door1 (2)
+      value: Door_Arachnofobia
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5759b9a7f02385d4ca4b33bb907c3f2c, type: 3}
@@ -1491,19 +1514,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.68012846
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00000016292068
+      value: -0.73309296
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_RootOrder
@@ -1515,7 +1538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 274.293
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

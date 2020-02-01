@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class WallsController : MonoBehaviour
 {
@@ -26,7 +25,7 @@ public class WallsController : MonoBehaviour
         if (_leftHit && _rightHit && _topHit && _bottomHit)
         {
             StopMoving();
-            SceneManager.LoadScene(1);
+            ImpulseSceneManager.Load2DRoom();
             return;
         }
 

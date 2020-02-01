@@ -4,10 +4,8 @@ public class CharacterCollisionController : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        
         if (other.CompareTag("WrongDecision"))
         {
-    
             other.GetComponent<IWrongDecision>().Make();
         }
     }
@@ -16,7 +14,6 @@ public class CharacterCollisionController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerInteractable") && Input.GetKey(KeyCode.E))
         {
-         
             other.gameObject.GetComponent<IPlayerInteractable>().Interact();
         }
     }

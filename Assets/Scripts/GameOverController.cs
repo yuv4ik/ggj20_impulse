@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameOverController : MonoBehaviour
 {
@@ -7,7 +6,7 @@ public class GameOverController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            SceneManager.LoadScene(0);
+            ImpulseSceneManager.LoadPreRoom();
         }
     }
 }
