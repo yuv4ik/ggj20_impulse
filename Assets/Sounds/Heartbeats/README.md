@@ -1,6 +1,6 @@
 # Heartbeats
 
-## Source:
+## Sources:
 - 0:00:10 • 01 Dramatic heartbeat 🔽 https://youtu.be/krs6zBMfSCg
 - 0:00:31 • 02 Slow heartbeat (40 bpm) 🔽 https://youtu.be/7hjvzYea_Zw
 - 0:01:02 • 03 Human heartbeat (almost 70 bpm) 🔽 https://youtu.be/AgViP6_Mhd4
