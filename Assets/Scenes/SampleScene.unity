@@ -5703,6 +5703,26 @@ PrefabInstance:
       propertyPath: _wallsController
       value: 
       objectReference: {fileID: 1092570965}
+    - target: {fileID: 4318579069966736245, guid: 39ae5482ec0db4e4197f076c0f97dfe5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318579070461018989, guid: 39ae5482ec0db4e4197f076c0f97dfe5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318579070510474193, guid: 39ae5482ec0db4e4197f076c0f97dfe5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318579070704945676, guid: 39ae5482ec0db4e4197f076c0f97dfe5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5246484516360273417, guid: 39ae5482ec0db4e4197f076c0f97dfe5,
         type: 3}
       propertyPath: m_Name

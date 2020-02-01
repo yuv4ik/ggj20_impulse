@@ -12,17 +12,25 @@ public class CharacterCollisionController : MonoBehaviour
         }
     }
 
-    void OnCollisionStay(Collision other)
+    void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("PlayerInteractable"))
+        if(other.gameObject.CompareTag("PlayerInteractable"))
         {
             _showHint = true;
-            if (Input.GetKey(KeyCode.E))
-            {
-                other.gameObject.GetComponent<IPlayerInteractable>().Interact();
-            }
         }
-        else
+    }
+
+    void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.CompareTag("PlayerInteractable") && Input.GetKey(KeyCode.E))
+        {
+            other.gameObject.GetComponent<IPlayerInteractable>().Interact();
+        }
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("PlayerInteractable"))
         {
             _showHint = false;
         }
@@ -36,6 +44,6 @@ public class CharacterCollisionController : MonoBehaviour
         _hintStyle.alignment = TextAnchor.UpperCenter;
         _hintStyle.fontStyle = FontStyle.Bold;
         _hintStyle.fontSize = 50;
-        GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "E", _hintStyle);
+        GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "\"E\"", _hintStyle);
     }
 }
