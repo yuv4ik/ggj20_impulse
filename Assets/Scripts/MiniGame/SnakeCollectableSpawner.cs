@@ -16,6 +16,9 @@ public class SnakeCollectableSpawner : MonoBehaviour, ISpawner
     [SerializeField]
     TimerController _timerController;
 
+    [SerializeField]
+    AudioSource _bgAudioSource;
+
     int _spawnCounter;
 
     void Awake()
@@ -31,6 +34,7 @@ public class SnakeCollectableSpawner : MonoBehaviour, ISpawner
         {
             _timerController.Stop();
             if (ImpulseSceneManager.IsGameOverLoaded()) return;
+            _bgAudioSource.Stop();
             ImpulseSceneManager.LoadCongrats();
             return;
         }
