@@ -853,6 +853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftWall: {fileID: 13729570}
   _rightWall: {fileID: 2019200055}
+  _topWall: {fileID: 580993306}
   _bottomWall: {fileID: 949992805}
   _character: {fileID: 913292614}
   _movementSpeed: 1

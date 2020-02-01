@@ -10,9 +10,9 @@ public class CharacterCollisionController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionStay(Collision other)
     {
-        if (other.gameObject.CompareTag("PlayerInteractable"))
+        if (other.gameObject.CompareTag("PlayerInteractable") && Input.GetKey(KeyCode.E))
         {
             other.gameObject.GetComponent<IPlayerInteractable>().Interact();
         }
