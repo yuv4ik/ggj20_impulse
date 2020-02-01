@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5549,6 +5549,11 @@ PrefabInstance:
       propertyPath: _wallsController
       value: 
       objectReference: {fileID: 1092570965}
+    - target: {fileID: 1348184342146017313, guid: b55e3b0e5e42e5d47a516a2dfb7fa4d1,
+        type: 3}
+      propertyPath: _wallsController
+      value: 
+      objectReference: {fileID: 1092570965}
     - target: {fileID: 6327278521802760790, guid: b55e3b0e5e42e5d47a516a2dfb7fa4d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5693,6 +5698,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1092570964}
     m_Modifications:
+    - target: {fileID: 4318579069878255895, guid: 39ae5482ec0db4e4197f076c0f97dfe5,
+        type: 3}
+      propertyPath: _wallsController
+      value: 
+      objectReference: {fileID: 1092570965}
     - target: {fileID: 5246484516360273417, guid: 39ae5482ec0db4e4197f076c0f97dfe5,
         type: 3}
       propertyPath: m_Name
