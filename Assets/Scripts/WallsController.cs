@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WallsController : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class WallsController : MonoBehaviour
 
     AudioSource _audioSource;
 
-    bool _shouldMove = true;
+    bool _shouldMove = true, _leftHit, _rightHit, _topHit, _bottomHit;
 
     void Awake()
     {
@@ -22,29 +23,37 @@ public class WallsController : MonoBehaviour
     {
         if (!_shouldMove) return;
 
+        if (_leftHit && _rightHit && _topHit && _bottomHit)
+        {
+            StopMoving();
+            SceneManager.LoadScene(1);
+            return;
+        }
+
         if (_leftWall.transform.position.z + _playerOffset < _character.transform.position.z)
         {
             _leftWall.transform.position += new Vector3(0, 0, 1 * _movementSpeed * Time.deltaTime);
-        }/* else
-        {
-            _audioSource.Stop();
         }
-        */
+        else { _leftHit = true; }
+
         if (_rightWall.transform.position.z - _playerOffset > _character.transform.position.z)
         {
             _rightWall.transform.position += new Vector3(0, 0, -1 * _movementSpeed * Time.deltaTime);
         }
+        else { _rightHit = true; }
 
         if (_topWall.transform.position.x + _playerOffset < _character.transform.position.x)
         {
             _topWall.transform.position += new Vector3(1 * _movementSpeed * Time.deltaTime, 0, 0);
         }
+        else { _topHit = true; }
 
         if (_bottomWall.transform.position.x - _playerOffset > _character.transform.position.x)
         {
             _bottomWall.transform.position += new Vector3(-1 * _movementSpeed * Time.deltaTime, 0, 0);
         }
-        
+        else { _bottomHit = true; }
+
     }
 
     public void StopMoving()

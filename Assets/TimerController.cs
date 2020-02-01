@@ -20,7 +20,7 @@ public class TimerController : MonoBehaviour
 
     void Update()
     {
-        var timePassed = _maxTime - Time.time;
+        var timePassed = _maxTime - Time.timeSinceLevelLoad;
 
         if(timePassed <= 0)
         {

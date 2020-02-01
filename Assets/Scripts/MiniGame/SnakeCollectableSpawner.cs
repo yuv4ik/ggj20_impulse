@@ -17,6 +17,8 @@ public class SnakeCollectableSpawner : MonoBehaviour, ISpawner
     void Awake()
     {
         Spawn();
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
     }
 
     public void Spawn()
