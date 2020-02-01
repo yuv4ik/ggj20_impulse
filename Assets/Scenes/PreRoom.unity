@@ -1022,7 +1022,7 @@ GameObject:
   - component: {fileID: 1389321309}
   - component: {fileID: 1389321308}
   m_Layer: 0
-  m_Name: text_claustophobia (3)
+  m_Name: TextSociophobia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,7 +1067,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4f5d196f8774da74fa0615a13e6b2293, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ee0b079baec847798ae9efe0ccb8587, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
