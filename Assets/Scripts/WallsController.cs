@@ -25,11 +25,11 @@ public class WallsController : MonoBehaviour
         if (_leftWall.transform.position.z + _playerOffset < _character.transform.position.z)
         {
             _leftWall.transform.position += new Vector3(0, 0, 1 * _movementSpeed * Time.deltaTime);
-        } else
+        }/* else
         {
             _audioSource.Stop();
         }
-
+        */
         if (_rightWall.transform.position.z - _playerOffset > _character.transform.position.z)
         {
             _rightWall.transform.position += new Vector3(0, 0, -1 * _movementSpeed * Time.deltaTime);
@@ -44,6 +44,7 @@ public class WallsController : MonoBehaviour
         {
             _bottomWall.transform.position += new Vector3(-1 * _movementSpeed * Time.deltaTime, 0, 0);
         }
+        
     }
 
     public void StopMoving()
