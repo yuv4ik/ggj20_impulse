@@ -10,6 +10,8 @@ public class TimerController : MonoBehaviour
 
     Slider _slider;
 
+    bool _isRunning = true;
+
     void Awake()
     {
         _slider = GetComponent<Slider>();
@@ -20,14 +22,18 @@ public class TimerController : MonoBehaviour
 
     void Update()
     {
+        if (!_isRunning) return;
+
         var timePassed = _maxTime - Time.timeSinceLevelLoad;
 
         if(timePassed <= 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
             return;
         }
 
         _slider.value = timePassed;
     }
+
+    public void Stop() => _isRunning = false;
 }

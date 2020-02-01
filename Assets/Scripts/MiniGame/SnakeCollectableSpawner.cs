@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SnakeCollectableSpawner : MonoBehaviour, ISpawner
 {
@@ -11,6 +12,9 @@ public class SnakeCollectableSpawner : MonoBehaviour, ISpawner
 
     [SerializeField]
     List<Vector3> _positions;
+
+    [SerializeField]
+    TimerController _timerController;
 
     int _spawnCounter;
 
@@ -25,7 +29,8 @@ public class SnakeCollectableSpawner : MonoBehaviour, ISpawner
     {
         if (_spawnCounter >= _maxObjectsToSpawn)
         {
-            // TODO: Trigger congratulations screen
+            _timerController.Stop();
+            SceneManager.LoadScene(3, LoadSceneMode.Additive);
             return;
         }
         _spawnCounter++;

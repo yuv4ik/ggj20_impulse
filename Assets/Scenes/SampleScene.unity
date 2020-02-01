@@ -2432,7 +2432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5421221ae6db34f73a1b71157a889c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallsController: {fileID: 1092570965}
 --- !u!114 &1476069588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2445,6 +2444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef5053b96e2043c8a8d3c6d826566ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wallsController: {fileID: 0}
 --- !u!1 &1480294778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,6 +2762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef5053b96e2043c8a8d3c6d826566ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wallsController: {fileID: 1092570965}
 --- !u!114 &1601621641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2774,7 +2775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5421221ae6db34f73a1b71157a889c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallsController: {fileID: 1092570965}
 --- !u!82 &1601621642
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3331,6 +3331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef5053b96e2043c8a8d3c6d826566ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wallsController: {fileID: 1092570965}
 --- !u!1 &2009135582
 GameObject:
   m_ObjectHideFlags: 0
