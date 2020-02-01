@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 8654075327053302857, guid: 5759b9a7f02385d4ca4b33bb907c3f2c,
         type: 3}
       propertyPath: m_Name
-      value: Door_Claustrophibia
+      value: DoorClaustrophibia
       objectReference: {fileID: 0}
     - target: {fileID: 8654075327053302857, guid: 5759b9a7f02385d4ca4b33bb907c3f2c,
         type: 3}
