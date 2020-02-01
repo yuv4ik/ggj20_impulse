@@ -10,9 +10,6 @@ public class UnloadPointController : MonoBehaviour
     [SerializeField]
     int _maxLoads = 3;
 
-    [SerializeField]
-    SnakeController _snakeController;
-
     int _spriteIndex;
 
     SpriteRenderer _spriteRenderer;
@@ -23,16 +20,12 @@ public class UnloadPointController : MonoBehaviour
         UpdateSprite();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void LoadImpulse()
     {
-        if (other.CompareTag("Player"))
-        {
-            if (!_snakeController.IsLoaded) return;
-            if (_spriteIndex >= _maxLoads) return;
+        if (_spriteIndex >= _maxLoads) return;
 
-            _spriteIndex++;
-            UpdateSprite();
-        }
+        _spriteIndex++;
+        UpdateSprite();
     }
 
     void UpdateSprite() => _spriteRenderer.sprite = _sprites[_spriteIndex];

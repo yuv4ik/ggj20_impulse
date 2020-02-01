@@ -5,6 +5,9 @@ public class SnakeCollisionController : MonoBehaviour
     [SerializeField]
     SnakeCollectableSpawner _snakeCollectablesSpawner;
 
+    [SerializeField]
+    UnloadPointController _unloadPointController;
+
     SnakeController _snakeController;
 
     void Awake()
@@ -24,6 +27,8 @@ public class SnakeCollisionController : MonoBehaviour
         {
             if (!_snakeController.IsLoaded) return;
             _snakeController.Unload();
+
+            _unloadPointController.LoadImpulse();
 
             _snakeCollectablesSpawner.Spawn();
         }

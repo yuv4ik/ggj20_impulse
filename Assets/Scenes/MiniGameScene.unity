@@ -615,6 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _snakeCollectablesSpawner: {fileID: 2141749566}
+  _unloadPointController: {fileID: 1396143740}
 --- !u!50 &1110774720
 Rigidbody2D:
   serializedVersion: 4
@@ -979,7 +980,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bd17b2088761b49c397bd61e0883d477, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1009,7 +1010,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 16be87bc73013426dbdfb5c315711cbc, type: 3}
   - {fileID: 21300000, guid: 8e0d5c6fd5e5f4df6ab95992a9b1241d, type: 3}
   _maxLoads: 3
-  _snakeController: {fileID: 1110774718}
 --- !u!61 &1396143741
 BoxCollider2D:
   m_ObjectHideFlags: 0
