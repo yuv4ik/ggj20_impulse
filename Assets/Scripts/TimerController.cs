@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Slider))]
@@ -28,7 +27,8 @@ public class TimerController : MonoBehaviour
 
         if(timePassed <= 0)
         {
-            SceneManager.LoadScene(2);
+            if (ImpulseSceneManager.IsGameOverLoaded()) return;
+            ImpulseSceneManager.LoadGameOver();
             return;
         }
 

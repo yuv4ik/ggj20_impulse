@@ -8,8 +8,9 @@ public class WrongDecisionController : MonoBehaviour, IWrongDecision
 
     public void Make()
     {
-        if (SceneManager.GetSceneByBuildIndex(2).isLoaded) return;
+        if (ImpulseSceneManager.IsGameOverLoaded()) return;
+
         _wallsController.StopMoving();
-        SceneManager.LoadScene(2, LoadSceneMode.Additive);
+        ImpulseSceneManager.LoadGameOver();
     }
 }

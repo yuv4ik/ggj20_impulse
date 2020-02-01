@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CongratsController : MonoBehaviour
 {
@@ -7,7 +6,7 @@ public class CongratsController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            SceneManager.LoadScene(0);
+            ImpulseSceneManager.LoadPreRoom();
         }
     }
 }
