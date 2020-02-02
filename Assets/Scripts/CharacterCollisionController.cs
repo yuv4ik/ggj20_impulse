@@ -12,28 +12,33 @@ public class CharacterCollisionController : MonoBehaviour
         }
     }
 
+    IPlayerInteractable _playerInteractable;
+
     void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.CompareTag("PlayerInteractable"))
+        Debug.Log($"OnCollisionEnter => {other.gameObject.tag}");
+        if (other.gameObject.CompareTag("PlayerInteractable"))
         {
-           
             _showHint = true;
+            _playerInteractable = other.gameObject.GetComponent<IPlayerInteractable>();
         }
     }
 
-    void OnCollisionStay(Collision other)
+    void Update()
     {
-        if (other.gameObject.CompareTag("PlayerInteractable") && Input.GetKey(KeyCode.E))
+        if (_playerInteractable != null && Input.GetKey(KeyCode.E))
         {
-            other.gameObject.GetComponent<IPlayerInteractable>().Interact();
+            _playerInteractable.Interact();
         }
     }
 
     void OnCollisionExit(Collision other)
     {
+        Debug.Log($"OnCollisionExit => {other.gameObject.tag}");
         if (other.gameObject.CompareTag("PlayerInteractable"))
         {
             _showHint = false;
+            _playerInteractable = null;
         }
     }
 
