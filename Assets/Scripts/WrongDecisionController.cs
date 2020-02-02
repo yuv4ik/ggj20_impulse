@@ -10,7 +10,7 @@ public class WrongDecisionController : MonoBehaviour, IWrongDecision
     {
         if (ImpulseSceneManager.IsGameOverLoaded()) return;
 
-        _wallsController.StopMoving();
+        _wallsController?.StopMoving();
         ImpulseSceneManager.LoadGameOver();
     }
 }

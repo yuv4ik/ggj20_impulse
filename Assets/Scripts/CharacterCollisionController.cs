@@ -16,6 +16,7 @@ public class CharacterCollisionController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("PlayerInteractable"))
         {
+           
             _showHint = true;
         }
     }
