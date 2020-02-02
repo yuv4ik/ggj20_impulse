@@ -5,4 +5,4 @@ Impulse is a game about understanding and trying to overcome different phobias. 
 Movement controls: W A S D
 To interact with objects: E
 
-P.S.: The game was created within ±48 hours for Global Game Jam 2020
+P.S.: The game was created within ±48 hours for [Global Game Jam 2020](https://globalgamejam.org/2020/games/impulse-7)
