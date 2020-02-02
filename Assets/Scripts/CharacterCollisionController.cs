@@ -16,7 +16,7 @@ public class CharacterCollisionController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("PlayerInteractable"))
         {
-            Debug.Log("Entered torch");
+           
             _showHint = true;
         }
     }
