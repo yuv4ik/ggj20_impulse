@@ -20,6 +20,6 @@ public class PPcontroller : MonoBehaviour
     {
         _step += 0.01f;
         _vignetteLayer.intensity.value = Mathf.PingPong(Mathf.Sin(_step * 0.5f), .5f);
-        Debug.Log(_vignetteLayer.intensity);
+        //Debug.Log(_vignetteLayer.intensity);
     }
 }
